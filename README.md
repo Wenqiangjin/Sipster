@@ -37,9 +37,8 @@ readings (needed even in a non-private setting).
 
 **Instructions of running the code:**
 1. Required tool kits: PBL http://crypto.stanford.edu/pbc, OpenSSL:https://www.openssl.org/
-2. Using GCC to complie the source file "Sipster.c" and then run "./Sipster".
-3. You can also directly download and run the complied file "./Sipster".
+2. Using GCC to complie the source file in the "Codes" folder and then run "./Sipster.run".
+3. You can also directly download and run the complied file "./Sipster.run".
 
 **Example compile commands on iMac devices:**
-
-gcc -o Sipster Sipster.c -I /usr/local/Cellar/pbc/0.5.14/include/pbc -I /usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib  -l pbc -lgmp -lssl -lcrypto 
+gcc  Sipster.c RU_CombineReceipt_Sipster.c RU_Verify_Sipster.c SM_BillGen_Sipster.c SM_TokenGen_Sipster.c UC_Bill_Verify_Sipster.c UC_ReceiptGen_Sipster.c -o ./Sipster.run -I /usr/local/Cellar/pbc/0.5.14/include/pbc -I /usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib  -l pbc -lgmp -lssl -lcrypto 
