@@ -122,7 +122,7 @@ void main(int argc, char **argv)
         }
     }
 
-  //Bill verification phase. SM generate bills. RU proves that the payments by combaining receipts.
+  //Bill verification phase: SM generates bills. RU proves the payments by combaining receipts.
   bill = SM_BillGen(ecdsa, bill, tt);
   combrcpt = RU_CombineReceipt(K,combrcpt,rcpt,tt,ga_uc,pairing);
   UC_Bill_Verify(K,ecdsa, bill,combrcpt, tt, g_rnd_uc, ga_uc, pairing);
