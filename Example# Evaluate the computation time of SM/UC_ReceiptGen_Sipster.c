@@ -26,7 +26,7 @@
     element_init_G1(rcpt.R_tide_a[i],pairing);
     element_pow_zn(rcpt.R_tide_a[i],tt.R_tide[i],secret_uc_a);
   }
-  element_printf("Receipt K: %B\n", cpt.R_tide_a[K-1]);
+  element_printf("Receipt K: %B\n", rcpt.R_tide_a[K-1]);
 
   printf(">>>>>UC: Receipt generated.<<<<<\n");
   return rcpt;
