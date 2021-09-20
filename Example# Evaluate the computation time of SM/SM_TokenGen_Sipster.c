@@ -44,7 +44,9 @@ Tau_Tk SM_TokenGen(int K, element_t g_rnd_uc, pairing_t pairing,  Tau_Tk tt,  Ec
     element_add(tt.r_t,tt.r_t,r[i]); 
     element_mul(tt.R_t,tt.R_t,R[i]); 
 
-  } 
+  }
+  element_printf("Updated the internal state r_{tau}: %B\n", tt.r_t);
+  element_printf("Updated the internal state R_{tau}: %B\n", tt.R_t);
 
   printf(">>>>>SM: Token generated.<<<<<.\n");
   return tt;

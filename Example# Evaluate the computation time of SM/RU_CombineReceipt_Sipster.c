@@ -24,6 +24,7 @@ CombRcpt RU_CombineReceipt(int K,  CombRcpt combrcpt,  Rcpt rcpt,  Tau_Tk tt, el
   }
   element_pow_zn(comb_lower,ga_uc,tt.r_t);   
   element_div(combrcpt.comb,comb_upper,comb_lower);
+  element_printf("Combained receipt K: %B\n", combrcpt.comb);
   printf(">>>>>RU: receipts combained.<<<<<\n");
   return combrcpt;
 }
